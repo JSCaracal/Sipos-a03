@@ -28,7 +28,7 @@ public class Solution25 {
     }
     //checks to see if it incoprperates numbers and letters
     boolean hasNumsAndLetters(String pass){
-        if(!hasLetters(pass) && !hasNumbers(pass)){
+        if(!hasLetters(pass) && hasNumbers(pass)){
             return true;
         }
         return false;
@@ -36,7 +36,7 @@ public class Solution25 {
     //checks to see if it incrops speccial characters
     boolean specialCharacters(String pass){
         for(int i = 0;i<pass.length();i++){
-            if(pass.charAt(i) >= 21 && pass.charAt(i)<= 46){
+            if(pass.charAt(i) >= 21 && pass.charAt(i)<= 47 || pass.charAt(i) >= 58 && pass.charAt(i) <= 64){
                 return true;
             }
         }
@@ -57,7 +57,7 @@ public class Solution25 {
         else if(lessThanEight(pass)&&hasLetters(pass)){
             return 2;
         }
-        else if(!lessThanEight(pass) && hasNumsAndLetters(pass)){
+        else if(!lessThanEight(pass) && hasNumsAndLetters(pass) && !specialCharacters(pass)){
             return 3;
         }
         else if(hasNumsAndLetters(pass)&& !lessThanEight(pass)&& specialCharacters(pass)){
