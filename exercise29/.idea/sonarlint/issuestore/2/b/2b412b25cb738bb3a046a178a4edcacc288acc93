@@ -1,0 +1,8 @@
+
+;
+java:S3457"%String contains no format specifiers.(ร่ล
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ร่ล
+S	java:S106"9Replace this use of System.out or System.err by a logger.(…จฬศ๘ÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(อÝุม
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(ฎฺง
+t	java:S120	"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(กาÝจÿÿÿÿÿ
