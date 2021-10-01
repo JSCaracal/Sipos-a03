@@ -13,7 +13,6 @@ public class MagicEightBall {
         choice = rand.nextInt(4);
         String response = this.responses[choice];
         System.out.println(response);
-
     }
 
 }

@@ -1,5 +1,7 @@
 package Baseline;
 
+import java.util.Scanner;
+
 public class Solution33 {
     /*
     Magic 8 ball
@@ -14,4 +16,13 @@ public class Solution33 {
     //It shall contain an RNG
     //It shall generate 1-4
     //It shall output the result.
+    private static final Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.print("What is your question?: ");
+        MagicEightBall ball = new MagicEightBall();
+        input.next();
+        ball.shake();
+
+    }
 }
