@@ -16,7 +16,20 @@ public class RandomGame {
 
     //Create a function for first level
     void theGame() {
+         Random rand = new Random();
+         int randomNumber;
         //Generate random number between certain numbers depending the level
+        switch (this.difficultyLevel){
+            case 1:
+                randomNumber = rand.nextInt(10);
+                break;
+            case 2:
+                randomNumber = rand.nextInt(100);
+                break;
+            case 3:
+                randomNumber = rand.nextInt(1000);
+                break;
+        }
 
         //Trap user in loop until they get it right
 
