@@ -1,18 +1,35 @@
 package Baseline;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class EmployeeList {
     //Initilize list of Employees, with names
-    private String names[] = new String[5];
+    private String names[] = {"John Smith",
+            "Jackie Jackson",
+            "Chris Jones",
+            "Amanda Cullen",
+            "Jeremy Goodwin"};
+    private List<String>nameList;
     public EmployeeList(){
-
+        nameList = new ArrayList<String>(Arrays.asList(names));
     }
     //Method the input of employee removal
     void removeEmployee(String emp){
-
+        //Loop through Array
+        for(int i = 0; i < nameList.size();i++){
+            if(emp.equals(nameList.indexOf(i))){
+                nameList.remove(i);
+                break;
+            }
+        }
     }
     //Print the list
     void printList(){
-
+        for(int i = 0; i < nameList.size();i++){
+            System.out.println(nameList.indexOf(i));
+        }
     }
 
 }
