@@ -19,7 +19,7 @@ public class EmployeeList {
     void removeEmployee(String emp){
         //Loop through Array
         for(int i = 0; i < nameList.size();i++){
-            if(emp.equals(nameList.indexOf(i))){
+            if(emp.equals(nameList.get(i))){
                 nameList.remove(i);
                 break;
             }
@@ -27,9 +27,7 @@ public class EmployeeList {
     }
     //Print the list
     void printList(){
-        for(int i = 0; i < nameList.size();i++){
-            System.out.println(nameList.indexOf(i));
-        }
+        System.out.println(nameList.toString());
     }
 
 }
