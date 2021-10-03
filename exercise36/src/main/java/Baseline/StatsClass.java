@@ -10,16 +10,22 @@ public class StatsClass {
     private static Scanner input = new Scanner(System.in);
     //Create a class that handles inputs
     void inputHandling(){
+        String in;
         while (true){
-            System.out.print("Please enter a number");
-            try{
-                inputs.add(input.nextInt());
+            System.out.print("Please enter a number: ");
+            in = input.next();
+            if(in.equals("done")){
                 break;
             }
-            catch (InputMismatchException e){
-                System.out.println("Please enter a full number: ");
-                input.next();
+            else{
+                try{
+                    inputs.add(Integer.parseInt(in));
+                }catch (NumberFormatException e){
+                    System.out.print("Please enter a valid number: ");
+                    input.next();
+                }
             }
+
         }
     }
     //Following requirements, create an average function
@@ -68,6 +74,9 @@ public class StatsClass {
             std += Math.pow(inputs.get(i)-avg,2);
         }
         return std;
+    }
+    void printList(){
+        System.out.println("Numbers: "+inputs.toString());
     }
 
 }
