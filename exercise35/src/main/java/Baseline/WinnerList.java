@@ -16,11 +16,12 @@ public class WinnerList {
         //Trap the user in a while loop until blank is reached
         while(true){
             System.out.print("Enter a name: ");
-            if(input.next() == ""){
+            String name = input.nextLine();
+            if(name.equals("")){
                 break;
             }
             else{
-                winners.add(input.next());
+                winners.add(name);
             }
         }
     }
