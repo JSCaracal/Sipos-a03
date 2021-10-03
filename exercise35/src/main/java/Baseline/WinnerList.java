@@ -33,5 +33,12 @@ public class WinnerList {
         System.out.println("The winner is.... " +winners.get(winningNumber));
     }
 
+    //Testing purposes only
+    public ArrayList<String> getWinners() {
+        return winners;
+    }
 
+    public void setWinners(ArrayList<String> winners) {
+        this.winners = winners;
+    }
 }
