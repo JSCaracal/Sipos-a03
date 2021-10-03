@@ -29,7 +29,7 @@ public class WinnerList {
     void pickAWinner(){
         Random rand = new Random();
         int winningNumber = rand.nextInt(winners.size());
-        
+        System.out.println("The winner is.... " +winners.get(winningNumber));
     }
 
 
