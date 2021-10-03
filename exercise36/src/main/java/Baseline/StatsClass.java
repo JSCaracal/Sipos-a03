@@ -8,6 +8,15 @@ import java.util.Scanner;
 public class StatsClass {
     private ArrayList<Integer> inputs = new ArrayList<Integer>();
     private static Scanner input = new Scanner(System.in);
+    //Test Constructor
+    public StatsClass(int test1, int test2, int test3){
+            inputs.add(test1);
+            inputs.add(test2);
+            inputs.add(test3);
+    }
+    public StatsClass(){
+
+    }
     //Create a class that handles inputs
     void inputHandling(){
         String in;
@@ -71,8 +80,10 @@ public class StatsClass {
         }
         double avg = average();
         for(int i = 0; i < inputs.size(); i++){
-            std += Math.pow(inputs.get(i)-avg,2);
+            std += Math.pow((double) inputs.get(i)-avg,2.0);
         }
+        double sq = std/inputs.size();
+        std = Math.sqrt(sq);
         return std;
     }
     void printList(){
