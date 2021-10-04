@@ -20,5 +20,13 @@ public class Filter {
             return nums;
     }
     //Create Filter Evenums
-    
+    ArrayList<Integer> filterEvenNumbers(ArrayList<Integer> inputNums){
+        ArrayList<Integer>ints = new ArrayList<Integer>();
+        for(int i = 0; i < inputNums.size(); i++){
+            if(inputNums.get(i) % 2 == 0){
+                ints.add(inputNums.get(i));
+            }
+        }
+        return ints;
+    }
 }
