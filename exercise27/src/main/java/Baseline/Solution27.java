@@ -27,16 +27,16 @@ public class Solution27 {
     //With in that class attempt exception handling if invalid credentials are entered
     //Get credentials using an input method
     public Employee inputEmployee(){
-        System.out.printf("Please enter your first name: ");
+        System.out.print("Please enter your first name: ");
         String fName = input.next();
-        System.out.printf("Please enter your last name: ");
+        System.out.print("Please enter your last name: ");
         String lName = input.next();
-        System.out.printf("Please enter your id: ");
+        System.out.print("Please enter your id: ");
         String id = input.next();
-        System.out.printf("Please enter your zip code: ");
+        System.out.print("Please enter your zip code: ");
         int zip = input.nextInt();
-        Employee out = new Employee(fName,lName,id,zip);
-        return out;
+        return  new Employee(fName,lName,id,zip);
+
 
     }
     public static void main(String[] args) {

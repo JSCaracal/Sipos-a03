@@ -7,14 +7,13 @@
 
 package Baseline;
 
-import java.util.Scanner;
 
 public class Employee {
     private String firstName;
     private String lastName;
     private String id;
     private int zipCode;
-    ;
+
 
     public Employee(String fName, String lName, String id, int zCode){
             this.firstName = fName;
@@ -31,10 +30,12 @@ public class Employee {
     }
     public boolean zipValidator(){
         String zip = Integer.toString(zipCode);
-        if(zip.length() < 5 || zip.length() > 5){
+        if( zip.length()!=5){
             return false;
+        }else {
+            return true;
         }
-        return true;
+
     }
     public boolean idValidator(){
         //Is it the id the length of 2 letters,1 hyphen, and 4 nums?
@@ -44,55 +45,46 @@ public class Employee {
         //Go char by char
         for(int i = 0; i < id.length(); i++){
             //Check the first 2
-            if(i < 2){
-                if(id.charAt(i) >= 65 && id.charAt(i) <= 90 || id.charAt(i) >= 91 && id.charAt(i) <= 122){
-                    continue;
-                }
-                else{
+            if(i < 2 && !(Character.isLetter(id.charAt(i)))){
+                System.out.println("Executed prehyphen");
                     return false;
-                }
             }
             //Checks for Hyphon
-            if(i == 2){
-                if(id.charAt(i) != 45){
+            if(i == 2 && id.charAt(i) != 45 ){
+                System.out.println("Executed hyphon");
                     return false;
                 }
-                else{
-                    continue;
-                }
-            }
             //Check for the last 4 numbs
-            if(i > 2) {
-                if (id.charAt(i) >= 48 && id.charAt(i) <= 57) {
-                    continue;
-                } else {
+            if(i > 2 && !(id.charAt(i) >= 48 && id.charAt(i) <= 57)){
+                System.out.println("Executed post");
                     return false;
                 }
-            }
 
         }
         return true;
     }
+
+
     //Create id validator
     void validateInput(Employee employee){
         boolean valid = true;
         if(!employee.nameValidator(employee.firstName)){
-            System.out.printf("The first name must be 2 characters long\n");
+            System.out.print("The first name must be 2 characters long\n");
             valid = false;
         }
         if(!employee.nameValidator(employee.lastName)){
-            System.out.printf("The last name must be 2 characters long\n");
+            System.out.print("The last name must be 2 characters long\n");
             valid = false;
         }
         if(!employee.idValidator()){
-            System.out.printf("The id must be in the format of: AA-1234\n");
+            System.out.print("The id must be in the format of: AA-1234\n");
             valid = false;
         }
         if(!zipValidator()){
             System.out.println("The Zip code must be a 5 digit number");
             valid = false;
         }
-        if(valid == true){
+        if(valid){
             System.out.println("There were no errors found");
         }
     }
