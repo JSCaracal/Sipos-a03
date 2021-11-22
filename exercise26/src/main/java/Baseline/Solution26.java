@@ -6,8 +6,7 @@ public class Solution26 {
     //Ask user for input of n,i,b,p
     double userInput(String prompt){
         System.out.printf("What is %s ",prompt);
-        double output =  input.nextDouble();
-        return output;
+        return input.nextDouble();
     }
 
     public static void main(String[] args) {
