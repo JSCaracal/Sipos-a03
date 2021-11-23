@@ -16,7 +16,7 @@ public class EmployeeList {
         nameList = new ArrayList<String>(Arrays.asList(names));
     }
     //Method the input of employee removal
-    void removeEmployee(String emp){
+    public void removeEmployee(String emp){
         //Loop through Array
         for(int i = 0; i < nameList.size();i++){
             if(emp.equals(nameList.get(i))){
@@ -30,4 +30,7 @@ public class EmployeeList {
         System.out.println(nameList.toString());
     }
 
+    public List<String> getNameList() {
+        return nameList;
+    }
 }
