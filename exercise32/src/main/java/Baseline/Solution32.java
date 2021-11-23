@@ -32,7 +32,7 @@ public class Solution32 {
             game.theGame();
             System.out.println("Would you like to play again? Y/N");
             String choice = input.next();
-            if(choice.equals("N")){
+            if(choice.equals("N") || choice.equals("n")){
                 break;
             }
         }
