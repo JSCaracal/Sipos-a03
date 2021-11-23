@@ -11,6 +11,9 @@ public class WinnerList {
     public WinnerList(){
 
     }
+    public WinnerList(ArrayList<String> winners){
+        this.winners = winners;
+    }
     //Have user input names via method
     void nameEnter(){
         //Trap the user in a while loop until blank is reached
@@ -27,10 +30,10 @@ public class WinnerList {
     }
 
     //RNG Function
-    void pickAWinner(){
+    public void pickAWinner(){
         Random rand = new Random();
         int winningNumber = rand.nextInt(winners.size());
-        System.out.println("The winner is.... " +winners.get(winningNumber));
+        System.out.print("The winner is.... " +winners.get(winningNumber));
     }
 
     //Testing purposes only
