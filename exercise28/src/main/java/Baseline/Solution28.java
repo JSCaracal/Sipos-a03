@@ -20,7 +20,7 @@ public class Solution28 {
         }
         return numbers;
     }
-    int addition(int[] numbers){
+    public int addition(int[] numbers){
         int summation = 0;
         for (int i = 0; i < numbers.length; i++) {
             summation += numbers[i];
