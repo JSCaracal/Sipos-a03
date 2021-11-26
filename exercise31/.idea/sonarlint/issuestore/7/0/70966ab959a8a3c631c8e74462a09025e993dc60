@@ -1,0 +1,27 @@
+
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ö„ø8­±£ÌÕ/
+F
+java:S1905")Remove this unnecessary cast to "double".(¿ÈÚÂ8­±£ÌÕ/
+F
+java:S1905")Remove this unnecessary cast to "double".(©îÅ°8­±£ÌÕ/
+K
+java:S1905")Remove this unnecessary cast to "double".(Æşÿßûÿÿÿÿ8­±£ÌÕ/
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õºÎ^8­±£ÌÕ/
+s
+java:S3457 "Q%n should be used in place of \n to produce the platform-specific line separator.(è§ç‚üÿÿÿÿ8­±£ÌÕ/
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(è§ç‚üÿÿÿÿ8­±£ÌÕ/
+s
+java:S3457!"Q%n should be used in place of \n to produce the platform-specific line separator.(¬çêÙùÿÿÿÿ8­±£ÌÕ/
+G
+java:S3457!"%String contains no format specifiers.(¬çêÙùÿÿÿÿ8­±£ÌÕ/
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(¬çêÙùÿÿÿÿ8­±£ÌÕ/
+s
+java:S3457""Q%n should be used in place of \n to produce the platform-specific line separator.(›¶‡Üùÿÿÿÿ8µ±£ÌÕ/
+G
+java:S3457""%String contains no format specifiers.(›¶‡Üùÿÿÿÿ8µ±£ÌÕ/
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(›¶‡Üùÿÿÿÿ8µ±£ÌÕ/
+n
+java:S3457$"Q%n should be used in place of \n to produce the platform-specific line separator.(ú‘¯œ8µ±£ÌÕ/
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(ú‘¯œ8µ±£ÌÕ/
+F
+java:S1068")Remove this unused "input" private field.(‹ì‡²8µ±£ÌÕ/

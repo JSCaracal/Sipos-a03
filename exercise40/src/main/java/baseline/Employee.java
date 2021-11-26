@@ -8,8 +8,8 @@ public class Employee {
     private String lName;
     private String position;
     private String date;
-    private Map<String,Employee> empMap = new HashMap<String,Employee>();
-    private Map<String,Employee> resultsMap = new HashMap<String,Employee>();
+    private Map<String,Employee> empMap = new HashMap<>();
+    private Map<String,Employee> resultsMap = new HashMap<>();
     public Employee(String fName, String lName, String position, String date){
         this.fName = fName;
         this.lName = lName;
@@ -38,7 +38,7 @@ public class Employee {
 
     public void search(String query){
         //Loop through contents
-        Map<String, Employee> contents = new HashMap<String,Employee>(this.empMap);
+        Map<String, Employee> contents = new HashMap<>(this.empMap);
         System.out.print("Name\t\t\t\tPosition\t\t\tDate\n");
         //If there is a match with.contains, print to screen
         for(Map.Entry<String, Employee> entry : contents.entrySet()){

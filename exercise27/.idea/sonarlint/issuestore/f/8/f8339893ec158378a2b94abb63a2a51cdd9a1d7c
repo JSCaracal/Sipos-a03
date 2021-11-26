@@ -1,0 +1,13 @@
+
+\
+java:S1126"AReplace this if-then-else statement by a single return statement.(«‹»¿üÿÿÿÿ
+\
+java:S1126!"AReplace this if-then-else statement by a single return statement.(ßáçéÿÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(­¿î™ýÿÿÿÿ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(œ›´‘
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(´Œ·£øÿÿÿÿ
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(•¦‹Î
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(ÄÿËËýÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(ÞëÛƒúÿÿÿÿ
+S	java:S106T"9Replace this use of System.out or System.err by a logger.(Ã‹Àíùÿÿÿÿ
+N	java:S106X"9Replace this use of System.out or System.err by a logger.(°ù„É

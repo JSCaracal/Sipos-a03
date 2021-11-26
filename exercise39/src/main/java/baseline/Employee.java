@@ -8,7 +8,7 @@ public class Employee {
     private String lName;
     private String position;
     private String date;
-    private Map<String,Employee> empMap = new HashMap<String,Employee>();
+    private Map<String,Employee> empMap = new HashMap<>();
 
     public Employee(String fName, String lName, String position, String date){
         this.fName = fName;
@@ -32,7 +32,7 @@ public class Employee {
         }
     }
     public void printandSort(){
-        Map<String, Employee> sorted = new TreeMap<String,Employee>(this.empMap);
+        Map<String, Employee> sorted = new TreeMap<>(this.empMap);
         System.out.print("Name\t\t\t\tPosition\t\t\tDate\n");
         for(Map.Entry<String, Employee> entry : sorted.entrySet()){
             System.out.printf("%s %s\t\t%s\t\t%s%n",entry.getValue().fName,entry.getValue().lName,entry.getValue().position,entry.getValue().date);

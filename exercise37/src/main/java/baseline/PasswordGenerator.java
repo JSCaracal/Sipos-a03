@@ -13,7 +13,7 @@ public class PasswordGenerator {
     Random rand = new Random();
 
     PasswordGenerator(){
-        generatedPass = new ArrayList<Character>();
+        generatedPass = new ArrayList<>();
     }
 
     //Have a method that fills the charList with random characters

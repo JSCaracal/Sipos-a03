@@ -1,0 +1,9 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¸¯¼ıÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ØŞ°ÿÿÿÿÿ
+‡
+java:S1319"rThe type of the "winners" object should be an interface such as "List" rather than the implementation "ArrayList".(¨ÔÁ
+†
+java:S1319)"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(üÇÛ¢
+ˆ
+java:S1319-"rThe type of the "winners" object should be an interface such as "List" rather than the implementation "ArrayList".(ËÇş
